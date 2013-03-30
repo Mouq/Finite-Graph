@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Rational Trigonometry</title>
+	<style type="text/css">
+	    body {
+		background-color: #C7CDD1;
+	    }
+	    li {
+		display: inline;
+		margin-right: 30px;
+	    }
+	    td {
+		width: auto;
+		height: auto;
+		border: 1px solid black;
+		text-align: center;
+		min-width: 20px;
+		min-height: 20px;
+	    }
+	    .noB {
+		border: 0px;
+	    }
+	</style>
+	<script type="text/javascript" src="./css.js"></script> 
+	<script type="text/javascript" src="./fn-plot.js"></script>
+    </head>
+    <body onload="graph();">
+	<div id="input">
+		<a href="https://en.wikipedia.org/wiki/Field_(mathematics)">Field</a> (number): 
+		<input id="field" type="text" value="17" onchange="graph();" />
+	    <ul>
+		<li>Equation: <input class="equation" type="text" value="3*y=7*x" onchange="graph();" /></li>
+		<li>Color: #<input class="color" type="text" value="FF0000" onchange="graph();" /></li>
+		<li><button class="kill" >-</button></li>
+	    </ul>
+	</div>
+	<div><button onclick="newEq(); graph();" >+</button></div>
+	<div id="error" style="color:red;">
+	</div>
+	<div id="graph">
+	</div>
+    </body>
+</html>
+
